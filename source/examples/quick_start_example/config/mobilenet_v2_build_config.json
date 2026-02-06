@@ -1,0 +1,30 @@
+{
+  "model_type": "ONNX",
+  "npu_mode": "NPU1",
+  "quant": {
+    "input_configs": [
+      {
+        "tensor_name": "input",
+        "calibration_dataset": "./dataset/imagenet-32-images.tar",
+        "calibration_size": 32,
+        "calibration_mean": [103.939, 116.779, 123.68],
+        "calibration_std": [58.0, 58.0, 58.0]
+      }
+    ],
+    "calibration_method": "MinMax",
+    "precision_analysis": false
+  },
+  "input_processors": [
+    {
+      "tensor_name": "input",
+      "tensor_format": "BGR",
+      "src_format": "BGR",
+      "src_dtype": "U8",
+      "src_layout": "NHWC",
+      "csc_mode": "NoCSC"
+    }
+  ],
+  "compiler": {
+    "check": 0
+  }
+}

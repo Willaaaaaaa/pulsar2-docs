@@ -30,7 +30,7 @@ optional arguments:
 
 `/data/config/` 路径下的 `mobilenet_v2_build_config.json` 展示:
 
-```json
+```shell
 {
   "model_type": "ONNX",
   "npu_mode": "NPU1",
@@ -40,9 +40,7 @@ optional arguments:
         "tensor_name": "input",
         "calibration_dataset": "./dataset/imagenet-32-images.tar",
         "calibration_size": 32,
-        // 校验数据集归一化的各通道均值, 通道顺序与 tensor_format 一致
         "calibration_mean": [103.939, 116.779, 123.68],
-        // 校验数据集归一化的各通道标准差
         "calibration_std": [58.0, 58.0, 58.0]
       }
     ],
@@ -53,13 +51,9 @@ optional arguments:
     {
       "tensor_name": "input",
       "tensor_format": "BGR",
-      // 运行时输入格式
       "src_format": "BGR",
-      // 运行时数据类型
       "src_dtype": "U8",
-      // 运行时数据布局格式
       "src_layout": "NHWC",
-      // 颜色空间转换
       "csc_mode": "NoCSC"
     }
   ],

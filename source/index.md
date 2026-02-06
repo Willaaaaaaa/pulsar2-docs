@@ -38,7 +38,7 @@ tool_classification/functional_safety.md
 :name: Other Tools
 
 other_tools/caffe_to_onnx.md
-other_tools/convert_to_4w8f.md
+other_tools/convert_to_4w4f.md
 other_tools/polygrapy_extract.md
 other_tools/profiling.md
 :::

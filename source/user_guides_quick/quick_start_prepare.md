@@ -33,8 +33,7 @@ Docker version 20.10.7, build f0df350
 
 工具链获取途径：
 
-- [Hugging Face](https://huggingface.co/AXERA-TECH/Pulsar2/tree/main/4.2)
-- [HF Mirror](https://hf-mirror.com/AXERA-TECH/Pulsar2)
+- 通过企业途径向 AXera 签署 NDA 后由其技术支持人员释放。
 
 ### 载入 Docker Image
 
