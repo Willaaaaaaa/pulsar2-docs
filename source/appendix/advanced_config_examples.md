@@ -166,7 +166,7 @@ log 中 `preprocess tensor [input]` 与 `postprocess tensor [output]` 之间列�
 `tensor_format` 与 `src_format` 的组合 **不支持** RGB ↔ BGR 通道互转, 编译后的模型中实际不做通道重排. 色彩空间转换仅在 {ref}`YUV 输入 <yuv_input_config>` 场景中使用.
 :::
 
-(yuv_input_config)
+(yuv_input_config)=
 
 ## YUV 输入
 
